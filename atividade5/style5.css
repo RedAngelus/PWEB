@@ -1,0 +1,82 @@
+.box {
+      width: 500px;
+      height: 500px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2::before {
+      content: "Cinza"; 
+    }
+
+    
+    @media (max-width: 420px) {
+      .box {
+        background-color: gray;
+      }
+      h2::before {
+        content: "Cinza";
+      }
+    }
+
+    
+    @media (min-width: 421px) and (max-width: 768px) {
+      .box {
+        background-color: orange;
+      }
+      h2::before {
+        content: "Laranja";
+      }
+    }
+
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .box {
+        background-color: pink;
+      }
+      h2::before {
+        content: "rosa";
+      }
+    }
+
+    /* 1025px até 1080px */
+    @media (min-width: 1025px) and (max-width: 1080px) {
+      .box {
+        background-color: red;
+      }
+      h2::before {
+        content: "Vermelho";
+      }
+    }
+
+    /* 1081px até 1366px */
+    @media (min-width: 1081px) and (max-width: 1366px) {
+      .box {
+        background-color: blue;
+      }
+      h2:re {
+        content: "azul";
+      }
+    }
+
+    /* 1367px até 1920px */
+    @media (min-width: 1367px) and (max-width: 1920px) {
+      .box {
+        background-color: yellow;
+      }
+      h2::before {
+        content: "Amarelo";
+      }
+    }
+
+    
+    @media (min-width: 1921px) {
+      .box {
+        background-color: green;
+      }
+      h2::before {
+        content: "Verde";
+      }
+    }
