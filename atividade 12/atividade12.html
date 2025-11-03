@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        class Retangulo {
+            constructor (x, y){
+                this._X = x;
+                this._Y = y;
+            }
+            calcArea(){
+                return this._X * this._Y;
+            }
+        }
+        
+        
+        let base = double(prompt("Digite a base do retângulo:"));
+        let altura = double(prompt("Digite a altura do retângulo:"));
+
+
+        let objRetangulo = new Retangulo(base, altura);
+
+        alert("A área do retângulo é: " + objRetangulo.calcArea());
+
+        
+
+        class Conta {
+            constructor(){
+                this._nomeCorrentista;
+                this._banco;
+                this._numeroConta;
+                this._saldo;
+            }
+            setNomeCorrentista(value){
+                this._nomeCorrentista = value;
+            }
+            setBanco(value){
+                this._banco = value;
+            }
+            setNumeroConta(value){
+                this._numeroConta = value;
+            }
+            setSaldo(value){
+                this._saldo = value;
+            }
+            getNomeCorrentista(){
+                return this._nomeCorrentista;
+            }
+            getBanco(){
+                return this._banco;
+            }
+            getNumeroConta(){
+                return this._numeroConta;
+            }
+            getSaldo(){
+                return this._saldo;
+            }
+        }
+
+        class corrente extends Conta{
+            constructor(){
+                super();
+                this._saldoEspecial
+            }
+            setSaldoEspecial(value){
+                this._saldoEspecial = value;
+            }
+            getSaldoEspecial(){
+                return this._saldoEspecial;
+            }
+        }
+
+        class poupanca extends Conta{
+            constructor(){
+                super();
+                this._juros;
+                this._dataVencimento;
+            }
+            setJuros(value){
+                this._juros = value;
+            }
+            setDataVencimento(value){
+                this._dataVencimento = value;
+            }
+            getJuros(){
+                return this._juros;
+            }
+            getDataVencimento(){
+                return this._dataVencimento;
+            }
+        }
+
+        let objPoupanca = new poupanca();
+        objPoupanca.setNomeCorrentista() = prompt("Digite seu nome: ");
+        objPoupanca.setBanco() = prompt("Digite o nome do banco: ");
+        objPoupanca.setNumeroConta() = int(prompt("Digite o numero da conta: "));
+        objPoupanca.setDataVencimento() = prompt("Digite a data de vencimento: ");
+        objPoupanca.setJuros() = double(prompt("Digite o juros: "));
+        objPoupanca.setSaldo() = double(prompt("Digite a quantidade de saldo da conta: "));
+
+        alert("nome= " + objPoupanca.getNomeCorrentista() +
+            "\n banco= " + objPoupanca.getBanco() +
+            "\n Numera da conta= " + objPoupanca.getNumeroConta() +
+            "\n data de nascimento= " + objPoupanca.getDataVencimento() +
+            "\n Juros de= " + objPoupanca.getJuros() +
+            "\n saldo= " + objPoupanca.getSaldo() +
+            "\n data de vencimento= " + objPoupanca.getDataVencimento()
+        )
+
+        let objCorrente = new corrente();
+
+        alert("Agora sera sobre a conta corrente")
+
+        objCorrente.setNomeCorrentista() = prompt("Digite seu nome: ");
+        objCorrente.setBanco() = prompt("Digite o nome do banco: ");
+        objCorrente.setNumeroConta() = int(prompt("Digite o numero da conta: "));
+        objCorrente.setSaldoEspecial() = double(prompt("Digite o valor do cheque especial: "));
+        objCorrente.setSaldo() = double(prompt("Digite a quantidade de saldo da conta: "));
+
+        alert("nome= " + objCorrente.getNomeCorrentista() +
+            "\n banco= " + objCorrente.getBanco() +
+            "\n Numera da conta= " + objCorrente.getNumeroConta() +
+            "\n data de nascimento= " + objCorrente.getDataVencimento() +
+            "\n cheque especial= " + objCorrente.getSaldoEspecial() +
+            "\n saldo= " + objCorrente.getSaldo()
+        )
+
+    </script>
+</body>
+</html>
